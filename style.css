@@ -14,9 +14,7 @@ body {
     color: var(--text-light);
 }
 
-/* --- NAVBAR WITH SUBTITLE --- */
 .navbar {
-    /* Absolute positioning makes the nav float over the background, fixing the scroll issue */
     position: absolute; 
     top: 0;
     left: 0;
@@ -62,13 +60,12 @@ body {
     font-size: 0.9rem;
 }
 
-/* --- HERO SECTION --- */
 .hero {
     display: flex;
-    align-items: center; /* This perfectly centers your text vertically */
+    align-items: center; 
     justify-content: flex-end; 
     padding: 0 5%;
-    height: 100vh; /* Locks the height to exactly one screen, stopping the scroll */
+    height: 100vh; 
     position: relative;
     box-sizing: border-box;
     
@@ -85,14 +82,13 @@ body {
 .hero-text {
     width: 45%; 
     text-align: left; 
-    /* Removed padding-top so it centers cleanly */
 }
 
 .hero h1 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 9vw; 
     line-height: 0.85;
-    margin: 0 0 0.5rem 0; /* Tightened the gap below the header */
+    margin: 0 0 0.5rem 0; 
     letter-spacing: 2px;
 }
 
@@ -117,8 +113,8 @@ body {
     font-size: 0.95rem;
     color: var(--text-muted);
     line-height: 1.5;
-    max-width: 450px; /* Made slightly wider so the text takes up fewer lines */
-    margin-bottom: 1.5rem; /* Tightened the gap above the link */
+    max-width: 450px; 
+    margin-bottom: 1.5rem; 
 }
 
 .view-work-link {
@@ -155,7 +151,6 @@ body {
     letter-spacing: 2px;
     text-transform: uppercase;
 }
-/* --- LAYOUT SPACING --- */
 .projects {
     padding: 5rem 5% 1rem 5%; 
     background-color: var(--bg-dark);
@@ -177,7 +172,6 @@ body {
     box-sizing: border-box;
 }
 
-/* Identical Header Alignment */
 .projects h2, .about-section h2, .contact-section h2 {
     color: var(--text-light);
     font-family: 'Bebas Neue', sans-serif;
@@ -188,7 +182,6 @@ body {
     padding-bottom: 1rem;
 }
 
-/* --- GRID STRUCTURES --- */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -398,7 +391,6 @@ h2.contact-title {
     color: var(--accent-blue);
 }
 
-/* 3D Glossy Button Effect */
 .contact-right {
     display: flex;
     justify-content: center;
