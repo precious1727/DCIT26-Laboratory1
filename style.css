@@ -6,6 +6,10 @@
     --glow: rgba(59, 130, 246, 0.8);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -428,4 +432,31 @@ h2.contact-title {
     font-size: 2.5rem;
     font-weight: 300;
     text-shadow: 0 0 15px var(--accent-blue);
+}
+
+/* --- BACK TO TOP FEATURE --- */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: var(--accent-blue);
+    color: var(--text-light);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(59, 130, 246, 0.4);
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+.back-to-top:hover {
+    transform: translateY(-5px);
+    background: #ffffff;
+    color: var(--accent-blue);
+    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.6);
 }
